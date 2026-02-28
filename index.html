@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Tree — Concept Overview</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
   :root {
     --forest: #1a2e1a;
@@ -171,8 +172,6 @@
     color: var(--text-light);
     max-width: 680px;
     line-height: 1.8;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 56px;
   }
 
@@ -195,9 +194,10 @@
   }
 
   .problem-icon {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 16px;
     display: block;
+    color: var(--canopy);
   }
 
   .problem-card h3 {
@@ -637,32 +637,32 @@
     
     <div class="problem-grid">
       <div class="problem-card">
-        <span class="problem-icon">🪨</span>
+        <span class="problem-icon"><i class="fa-solid fa-road-barrier"></i></span>
         <h3>Root Damage</h3>
         <p>Tree roots lift footpaths, crack kerbs, and infiltrate stormwater pipes. Councils face ongoing repair costs and public liability claims from trip hazards — particularly dangerous for elderly residents and wheelchair users.</p>
       </div>
       <div class="problem-card">
-        <span class="problem-icon">✂️</span>
+        <span class="problem-icon"><i class="fa-solid fa-scissors"></i></span>
         <h3>Pruning & Maintenance</h3>
         <p>Street trees require regular pruning around powerlines, buildings, and sightlines. Arborist costs run $300–$1,500 per tree per visit, multiplied across thousands of trees per municipality.</p>
       </div>
       <div class="problem-card">
-        <span class="problem-icon">🤧</span>
+        <span class="problem-icon"><i class="fa-solid fa-head-side-mask"></i></span>
         <h3>Allergens</h3>
         <p>London Plane Trees — Melbourne's most common street tree — produce aggressive pollen and fine seed hairs that trigger severe allergic reactions and respiratory issues for residents every spring and summer.</p>
       </div>
       <div class="problem-card">
-        <span class="problem-icon">🔌</span>
+        <span class="problem-icon"><i class="fa-solid fa-plug-circle-xmark"></i></span>
         <h3>No EV Infrastructure</h3>
         <p>Thousands of inner-suburban streets have zero off-street parking. Residents will need curbside EV charging, but there's no infrastructure pathway to deliver it — especially where tree roots already occupy the nature strip.</p>
       </div>
       <div class="problem-card">
-        <span class="problem-icon">💡</span>
+        <span class="problem-icon"><i class="fa-solid fa-lightbulb"></i></span>
         <h3>Aging Light Poles</h3>
         <p>Many street lights are decades old, inefficient, and due for replacement. Separate poles for lighting, signage, CCTV, and future 5G create visual clutter and redundant infrastructure.</p>
       </div>
       <div class="problem-card">
-        <span class="problem-icon">🌡️</span>
+        <span class="problem-icon"><i class="fa-solid fa-temperature-arrow-up"></i></span>
         <h3>Urban Heat</h3>
         <p>Removing problem trees without replacement eliminates canopy cover, worsening the urban heat island effect in Melbourne summers that are becoming increasingly extreme.</p>
       </div>
@@ -762,41 +762,6 @@
     <h2 class="section-title">Cable canopy design</h2>
     <p class="section-desc">The key innovation: curved light arms connected by tensioned stainless steel cables, forming a trellis grid that fast-growing deciduous vine covers within one growing season. Real overhead shade — not just trailing pots.</p>
 
-    <!-- Cross layout diagram -->
-    <div style="max-width: 600px; margin: 0 auto 56px; padding: 48px 24px; background: linear-gradient(160deg, var(--forest), var(--canopy)); border-radius: 24px; position: relative;">
-      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 24px;">View from above — cross-shaped arm layout</p>
-      <pre style="color: rgba(255,255,255,0.85); font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.6; text-align: center; margin: 0;">
-                    N
-                    |
-            Planter arm (full sun)
-            Kennedia, Hardenbergia
-                    |
-                    |
-  W ----[Cable Canopy Grid]---- E
-  Shops /     ===|===     \ Road
-  footpath   / POLE  \    side
-  shade     [  cap   ]   shade
-             \       /
-              ===|===
-                |
-                |
-        Planter arm (full sun)
-        Grevillea, Bower Vine
-                |
-                S
-      </pre>
-      <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-        <div style="padding: 16px; background: rgba(106,184,94,0.15); border-radius: 12px; border: 1px solid rgba(106,184,94,0.2);">
-          <strong style="color: var(--leaf-light); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">E-W Arms (Canopy)</strong>
-          <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 6px;">Longer curved arms with cable grid between them. Virginia Creeper grows across for full overhead shade covering road + footpath.</p>
-        </div>
-        <div style="padding: 16px; background: rgba(196,149,58,0.15); border-radius: 12px; border: 1px solid rgba(196,149,58,0.2);">
-          <strong style="color: var(--gold); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">N-S Arms (Planters)</strong>
-          <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 6px;">Shorter arms with clip-on planter troughs in full sun. Cascading natives — nitrogen-fixing species that feed the canopy vine.</p>
-        </div>
-      </div>
-    </div>
-
     <!-- Design details grid -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
 
@@ -853,57 +818,29 @@
   <div class="container">
     <span class="section-label" style="color: var(--bark);">Engineering</span>
     <h2 class="section-title">How it's built</h2>
-    <p class="section-desc">Every component uses proven, off-the-shelf technology from established Australian suppliers. No R&D breakthroughs required — just smart integration of existing systems.</p>
+    <p class="section-desc" style="text-align: left;">Every component uses proven, off-the-shelf technology from established Australian suppliers. No R&D breakthroughs required — just smart integration of existing systems.</p>
 
     <div style="display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 48px; max-width: 800px; margin-left: auto; margin-right: auto;">
 
       <!-- Component 1: Main Pole -->
       <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">🏗️</span>
+          <i class="fa-solid fa-building-columns" style="font-size: 1.4rem; color: var(--canopy);"></i>
           <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Main Pole (Trunk)</h3>
         </div>
         <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">Modular aluminium smart poles already exist and are deployed in streetscapes across Australia. Marine-grade 6000-series structural aluminium, extruded in Melbourne, with bolt-on modular sections. Lighter than steel, corrosion-proof, infinitely recyclable. Standard heights of 6–9m in stacking sections with pre-welded mounting collars for branch arms.</p>
         <p style="font-size: 0.85rem; font-weight: 500; color: var(--canopy); margin-bottom: 8px;">Australian Suppliers:</p>
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-          <li><a href="https://multipole.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: background 0.2s;">Multipole (Sydney) — Australia's original smart pole ↗</a></li>
-          <li><a href="https://urban-al.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Urban Aluminium (NSW/QLD) — multi-function poles ↗</a></li>
+          <li><a href="https://multipole.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: background 0.2s;">Multipole (Sydney) — modular smart poles + curved light arms ↗</a></li>
           <li><a href="https://www.hub-group.com/products/smartpole" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">HUB Group — SMART.POLE / SMART.NODE ↗</a></li>
-          <li><a href="https://adcoote.com.au/products/aluminium-poles/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">A.D. Coote & Co — UA STEM™ poles ↗</a></li>
-          <li><a href="https://www.vizona.com.au/products/aluminium-poles/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Vizona (Sydney/Perth) — aluminium poles ↗</a></li>
-          <li><a href="https://www.valmontstructures.com/product-catalog/us/poles-and-posts" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Valmont / INGAL EPS — international, AU presence ↗</a></li>
         </ul>
         <p style="margin-top: 12px; font-size: 0.82rem; color: #999;">Est. cost: $2,000–$4,000 per pole</p>
       </div>
 
-      <!-- Component 2: Branch Arms -->
+      <!-- Component 2: Planter Troughs -->
       <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">🌿</span>
-          <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Branch Arms (Curved Aluminium)</h3>
-        </div>
-        <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">CNC mandrel-bent aluminium tube (50–75mm diameter) with flange plates that bolt to mounting collars on the main pole. Think ring-lock scaffolding connections — branch arms pin or bolt in at predefined zone heights. Curved tube bending is standard fabrication work. Alternative: cast aluminium branch nodes using 3D-printed master patterns for organic Y-shaped forks.</p>
-        <p style="font-size: 0.85rem; font-weight: 500; color: var(--canopy); margin-bottom: 8px;">Melbourne Tube Bending & Fabrication:</p>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-          <li><a href="https://www.gardbar.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Gardbar / ABC Mandrel Bending (Bayswater) ↗</a></li>
-          <li><a href="https://bend.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">BendTech Industries (Clayton) ↗</a></li>
-          <li><a href="https://bendpro.com.au/melbourne/metal-bending/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">BendPro (Melbourne) — 5x CNC machines ↗</a></li>
-          <li><a href="https://www.austgen.com.au/metal-fabrication-services/tube-bending/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Australian General Engineering ↗</a></li>
-          <li><a href="https://www.dvrengineering.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">DVR Engineering — CNC tube laser + bending ↗</a></li>
-        </ul>
-        <p style="font-size: 0.85rem; font-weight: 500; color: var(--canopy); margin-top: 12px; margin-bottom: 8px;">Cast Aluminium (for organic branch nodes):</p>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-          <li><a href="https://awbell.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">AW Bell (Melbourne) — sand/investment casting ↗</a></li>
-          <li><a href="https://billmansfoundry.com.au/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Billmans Foundry (Castlemaine, VIC) ↗</a></li>
-          <li><a href="https://www.zeal3dprinting.com.au/services/rapid-prototype-for-sand-casting/" target="_blank" style="display: inline-block; padding: 6px 14px; background: #e8efe8; border-radius: 20px; color: var(--forest); text-decoration: none; font-size: 0.82rem; font-weight: 500;">Zeal 3D — rapid prototype sand casting ↗</a></li>
-        </ul>
-        <p style="margin-top: 12px; font-size: 0.82rem; color: #999;">Est. cost: $1,500–$3,000 for 6–8 arms (bent tube) | $3,000–$6,000 (cast nodes)</p>
-      </div>
-
-      <!-- Component 3: Planter Troughs -->
-      <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">🪴</span>
+          <i class="fa-solid fa-seedling" style="font-size: 1.4rem; color: var(--canopy);"></i>
           <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Planter Troughs (Clip-On)</h3>
         </div>
         <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">Custom fibreglass or GRC (glass-reinforced concrete) troughs shaped to cradle into the branch arms. Lightweight, UV-stable, with built-in drainage and sub-irrigation reservoirs. The clip-on mechanism is a simple U-bracket with a pin lock — cherry picker pulls the pin, lifts the old trough, drops in a pre-planted replacement. The 5-minute pot swap.</p>
@@ -920,7 +857,7 @@
       <!-- Component 4: Irrigation -->
       <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">💧</span>
+          <i class="fa-solid fa-droplet" style="font-size: 1.4rem; color: var(--canopy);"></i>
           <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Drip Irrigation System</h3>
         </div>
         <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">Water line runs up inside the hollow main pole from a base-mounted pump, tees off at each mounting collar into the hollow branch arms, and drips into each trough via standard 13mm poly fittings. This is identical to drip irrigation on a pergola or green wall — any irrigation supplier or plumber can install it. Smart controller with moisture sensors, timer, and optional rain gauge integration.</p>
@@ -931,7 +868,7 @@
       <!-- Component 5: Cable Canopy System -->
       <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">🕸️</span>
+          <i class="fa-solid fa-diagram-project" style="font-size: 1.4rem; color: var(--canopy);"></i>
           <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Cable Canopy System</h3>
         </div>
         <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">Stainless steel cables (3–4mm wire rope) tensioned between the pole cap and curved arm tips using standard turnbuckles. Welded hook brackets on arm tips, eye bolts at the pole cap. The cable grid forms the trellis that vine grows across. This is standard marine/architectural rigging hardware — the same system used for green facades, tensioned shade sails, and architectural cable balustrades. Vine maintenance is minimal — annual pruning only. The vine self-manages across the cable grid.</p>
@@ -948,7 +885,7 @@
       <!-- Component 6: Integrated Utilities -->
       <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <span style="font-size: 1.8rem;">⚡</span>
+          <i class="fa-solid fa-bolt" style="font-size: 1.4rem; color: var(--canopy);"></i>
           <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.3rem; color: var(--forest);">Integrated Utilities</h3>
         </div>
         <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">LED street lighting, CCTV, 5G small cells, WiFi access points, and EV charging are all existing bolt-on accessories for modular smart poles. Companies like Multipole and HUB already manufacture these accessory modules with standardised mounting systems. The Digital Tree simply adds the planting and cable canopy layers on top of proven smart city infrastructure.</p>
@@ -958,10 +895,18 @@
     </div>
 
     <!-- Total cost summary -->
-    <div style="max-width: 800px; margin: 48px auto 0; background: linear-gradient(135deg, var(--forest), var(--canopy)); border-radius: 12px; padding: 32px; color: white; text-align: center;">
-      <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.4rem; margin-bottom: 12px;">Prototype Cost Estimate</h3>
-      <p style="font-size: 2.2rem; font-weight: 600; color: var(--gold); margin-bottom: 8px;">$8,000 – $15,000</p>
-      <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px;">First unit, fully planted, installed. Cost drops significantly at scale.</p>
+    <div style="max-width: 800px; margin: 48px auto 0; background: linear-gradient(135deg, var(--forest), var(--canopy)); border-radius: 12px; padding: 32px; color: white;">
+      <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 1.4rem; margin-bottom: 20px; text-align: center;">Prototype Cost Estimate</h3>
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; font-size: 0.9rem; max-width: 480px; margin: 0 auto 24px;">
+        <span style="opacity: 0.8;">Smart pole + curved light arms</span><span style="text-align: right;">$3,000–$5,000</span>
+        <span style="opacity: 0.8;">Cable canopy system</span><span style="text-align: right;">$800–$1,500</span>
+        <span style="opacity: 0.8;">Planter troughs (4–6 custom)</span><span style="text-align: right;">$800–$1,500</span>
+        <span style="opacity: 0.8;">Drip irrigation</span><span style="text-align: right;">$500–$800</span>
+        <span style="opacity: 0.8;">Plants & planting</span><span style="text-align: right;">$400–$800</span>
+        <span style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 8px; font-weight: 500;">Total (first unit, installed)</span>
+        <span style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 8px; text-align: right; font-weight: 600; color: var(--gold); font-size: 1.1rem;">$5,500–$9,600</span>
+      </div>
+      <p style="font-size: 0.85rem; opacity: 0.6; text-align: center; margin-bottom: 16px;">Utility integration (LED, CCTV, EV, 5G) costed separately per council spec.</p>
       <div style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; font-size: 0.85rem; opacity: 0.7;">
         <span>vs. Mature street tree: $3,000–$8,000 to plant</span>
         <span>+ $500–$1,500/yr maintenance</span>
